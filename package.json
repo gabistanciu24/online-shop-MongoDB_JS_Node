@@ -1,0 +1,20 @@
+{
+  "name": "online-shop-mongodb_js_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabistanciu24/online-shop-MongoDB_JS_Node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabistanciu24/online-shop-MongoDB_JS_Node/issues"
+  },
+  "homepage": "https://github.com/gabistanciu24/online-shop-MongoDB_JS_Node#readme"
+}
