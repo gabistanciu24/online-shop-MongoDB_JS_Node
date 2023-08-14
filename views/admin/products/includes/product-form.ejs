@@ -9,14 +9,29 @@
       type="text"
       id="title"
       name="title"
-      value="<%=product.title%>"
+      value="<%= product.title %>"
       required
     />
   </p>
-  <p>
-    <label for="image">Image</label>
-    <input type="file" id="image" name="image" accept="image/png,image/jpg" />
-  </p>
+
+  <div id="image-upload-control">
+    <p>
+      <label for="image">Image</label>
+      <input
+        type="file"
+        id="image"
+        name="image"
+        accept="image/png,image/jpg"
+        <%
+        if
+        (imageRequired)
+        {
+        %
+      />required<% } %>>
+    </p>
+
+    <img src="" alt="Selected image." />
+  </div>
 
   <p>
     <label for="summary">Summary</label>
@@ -24,7 +39,7 @@
       type="text"
       id="summary"
       name="summary"
-      value="<%=product.summary%>"
+      value="<%= product.summary %>"
       required
       maxlength="250"
     />
@@ -36,9 +51,9 @@
       type="number"
       id="price"
       name="price"
+      value="<%= product.price %>"
       min="0.01"
       step="0.01"
-      value="<%=product.price%>"
       required
     />
   </p>
@@ -46,7 +61,7 @@
   <p>
     <label for="description">Description</label>
     <textarea id="description" name="description" rows="7" required>
-<%=product.description%></textarea
+<%= product.description %></textarea
     >
   </p>
 

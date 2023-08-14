@@ -18,11 +18,11 @@ function userDetailsAreValid(email, password, name, street, postal, city) {
   );
 }
 
-function emailIsConfiemed(email, confirmEmail) {
+function emailIsConfirmed(email, confirmEmail) {
   return email === confirmEmail;
 }
 
 module.exports = {
   userDetailsAreValid: userDetailsAreValid,
-  emailIsConfiemed: emailIsConfiemed,
+  emailIsConfirmed: emailIsConfirmed,
 };

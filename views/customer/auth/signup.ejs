@@ -6,12 +6,12 @@
   <%- include('../../shared/includes/header') %>
   <main>
     <h1>Create New Account</h1>
-    <% if(inputData.errorMessage){ %>
-        <section class="alert">
-          <h2>Invalid Input</h2>
-          <p><%= inputData.errorMessage %></p>
-        </section>
-      <%}%>
+    <% if (inputData.errorMessage) { %>
+      <section class="alert">
+        <h2>Invalid Input</h2>
+        <p><%= inputData.errorMessage %></p>
+      </section>
+    <% } %>
     <form action="/signup" method="POST">
       <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>">
       <p>
@@ -42,7 +42,7 @@
           id="postal" 
           name="postal" 
           minlength="5" 
-          maxlength="5"
+          maxlength="5" 
           value="<%= inputData.postal %>"
           required>
       </p>
