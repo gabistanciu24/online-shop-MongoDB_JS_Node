@@ -11,11 +11,12 @@
     "url": "git+https://github.com/gabistanciu24/online-shop-MongoDB_JS_Node.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Stanciu Gabriel",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gabistanciu24/online-shop-MongoDB_JS_Node/issues"
   },
+  
   "homepage": "https://github.com/gabistanciu24/online-shop-MongoDB_JS_Node#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
